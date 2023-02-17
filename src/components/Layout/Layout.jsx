@@ -1,40 +1,42 @@
+import { useState } from 'react'
 import {
-  /**
-   * A wrapper around the <a> element for ensuring the href links
-   * are generated correctly when linking internally
-   * https://reactrouter.com/en/main/components/link
-   */
   Link,
-  /**
-   * Alternative for when you want to give UX feedback
-   * about which page you are currently on
-   * https://reactrouter.com/en/main/components/nav-link
-   */
   NavLink,
-  /**
-   * This is akin to the props.children that you have been using
-   * It is where all the childroute elements will be inserted
-   * https://reactrouter.com/en/main/components/outlet
-   */
   Outlet,
 } from 'react-router-dom'
+import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
-// CSS Modules really help out here for not having to think to much about CSS Class names
 import styles from './styles.module.css'
 
-// We are using this component as a 'static' / layout for our page
 function Layout() {
+  const [theme, setTheme] = useState("paletteFirst")
+
+  function changeTheme() {
+    setTheme(
+      (oldTheme) => {
+        if (oldTheme === "paletteFirst") {
+          return "paletteSecond"
+        } else {
+          return ("paletteFirst")
+        }
+      }
+    )
+  }
+
   return (
-    <>
+    <div
+      className={theme}
+    >
       <header className={styles.header}>
+        <button onClick={changeTheme}>Change Theme</button>
         <h3>Links here</h3>
         <nav className={styles.navigation} >
-          {/* Use <Link> for inter page linking */}
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/projects'>Projects</Link>
+          <DropdownMenu>
+            <Link to='/'>Home</Link>
+            <Link to='/about'>About</Link>
+            <Link to='/projects'>Projects</Link>
+          </DropdownMenu>
 
-          {/* If you are linking to an external page use the normal <a> element */}
           <a href="https://www.github.com" target="_blank" referrerPolicy='no-referrer'>GitHub</a>
         </nav>
       </header>
@@ -46,7 +48,7 @@ function Layout() {
       <footer>
         <h5>Contact information</h5>
       </footer>
-    </>
+    </div>
   )
 }
 

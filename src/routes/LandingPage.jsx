@@ -9,6 +9,31 @@ function LandingPage() {
         <h2>Section</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam consectetur incidunt accusantium aut quia! Perspiciatis, ratione officia quia hic veritatis mollitia saepe tempore eum assumenda natus voluptatum, enim iste. At.</p>
       </section>
+
+      <section>
+        <h2>Section</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam consectetur incidunt accusantium aut quia! Perspiciatis, ratione officia quia hic veritatis mollitia saepe tempore eum assumenda natus voluptatum, enim iste. At.</p>
+      </section>
+
+      <section>
+        <h2>Section</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam consectetur incidunt accusantium aut quia! Perspiciatis, ratione officia quia hic veritatis mollitia saepe tempore eum assumenda natus voluptatum, enim iste. At.</p>
+      </section>
+
+      <section>
+        <h2>Section</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam consectetur incidunt accusantium aut quia! Perspiciatis, ratione officia quia hic veritatis mollitia saepe tempore eum assumenda natus voluptatum, enim iste. At.</p>
+      </section>
+
+      <section>
+        <h2>Section</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam consectetur incidunt accusantium aut quia! Perspiciatis, ratione officia quia hic veritatis mollitia saepe tempore eum assumenda natus voluptatum, enim iste. At.</p>
+      </section>
+
+      <section>
+        <h2>Section</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam consectetur incidunt accusantium aut quia! Perspiciatis, ratione officia quia hic veritatis mollitia saepe tempore eum assumenda natus voluptatum, enim iste. At.</p>
+      </section>
     </div>
   )
 }
